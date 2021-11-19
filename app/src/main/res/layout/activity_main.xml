@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#393838"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1C1C1C"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="left"
+                android:text="Input angka"
+                android:textColor="#E3E3E3"/>
+
+            <EditText
+                android:id="@+id/et_panjangAlasDiameter"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Input Panjang/Alas/Diameter"
+                android:textColorHint="#757575"
+                android:paddingStart="20dp"
+                android:background="#454545"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/et_lebarTinggi"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Input Lebar/Tinggi"
+                android:textColorHint="#757575"
+                android:paddingStart="20dp"
+                android:background="#454545"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="left"
+                android:text="Hitung"
+                android:textColor="#E3E3E3"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_persegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#323232"
+                android:text="Persegi"
+                android:textColor="#C3C3C3"/>
+
+            <Button
+                android:id="@+id/btn_segitiga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#323232"
+                android:text="segitiga"
+                android:textColor="#C3C3C3"/>
+
+            <Button
+                android:id="@+id/btn_lingkaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#323232"
+                android:text="lingkaran"
+                android:textColor="#C3C3C3"/>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:columnCount="2"
+                android:orientation="vertical"
+                android:rowCount="2">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Luas"
+                    android:textColor="#E3E3E3"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_valueLuas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="0 cm²"
+                    android:textColor="#E3E3E3"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Keliling"
+                    android:textColor="#E3E3E3"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_valueKeliling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="0 cm"
+                    android:textColor="#E3E3E3"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
